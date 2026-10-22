@@ -36,6 +36,21 @@ or `libfuse2`), or run it once with
 `./AeonTV-x86_64.AppImage --appimage-extract` and start the
 `AppRun` inside the extracted folder.
 
+## Starting it
+
+Double-click the AppImage (or the **AeonTV** menu entry once installed).
+Starting is *visible*: your browser opens at <http://localhost:8096>
+as soon as the servers are ready, and on a desktop a small
+"AeonTV is running" window stays up — its **Stop AeonTV** button
+shuts both servers down (there's also a **Stop AeonTV** menu entry
+and `stop-aeontv.sh` next to the installed AppImage).
+
+**The first start takes a few minutes** — ErsatzTV's database,
+the channel and the guide are being built. Later starts are fast.
+If truly nothing answers at <http://localhost:8096> after ~5
+minutes, run it once from a terminal to see what's happening:
+`./AeonTV-x86_64.AppImage` and read the output.
+
 ## Running the folder build instead
 
 `bin/start-aeontv.sh` from this folder does the same thing
