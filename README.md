@@ -4,7 +4,7 @@ One package containing:
 
 - **AeonTV** (the PS1-edition server build: Jellyfin 10.10.7
   rebrand with the AeonPS1 plugin bundled in) — watch on
-  <http://localhost:8096>
+  <http://localhost:8097>
 - **ErsatzTV Legacy v26.11.3** (stock upstream) — the channel
   engine that turns your videos into always-on live TV
   channels with a program guide — <http://localhost:8409>
@@ -39,7 +39,7 @@ or `libfuse2`), or run it once with
 ## Starting it
 
 Double-click the AppImage (or the **AeonTV** menu entry once installed).
-Starting is *visible*: your browser opens at <http://localhost:8096>
+Starting is *visible*: your browser opens at <http://localhost:8097>
 as soon as the servers are ready, and on a desktop a small
 "AeonTV is running" window stays up — its **Stop AeonTV** button
 shuts both servers down (there's also a **Stop AeonTV** menu entry
@@ -47,7 +47,7 @@ and `stop-aeontv.sh` next to the installed AppImage).
 
 **The first start takes a few minutes** — ErsatzTV's database,
 the channel and the guide are being built. Later starts are fast.
-If truly nothing answers at <http://localhost:8096> after ~5
+If truly nothing answers at <http://localhost:8097> after ~5
 minutes, run it once from a terminal to see what's happening:
 `./AeonTV-x86_64.AppImage` and read the output.
 
@@ -103,6 +103,6 @@ guide, and verifies the channel is listed. Safe to re-run.
   version; that's why provisioning writes to its database
   directly while it's stopped (the launcher handles the
   stop/start dance).
-- Ports: AeonTV 8096, ErsatzTV 8409, both on localhost by
+- Ports: AeonTV 8097, ErsatzTV 8409, both on localhost by
   default. Your nginx/Tailscale Funnel setup from the Bodhi
-  box fronts 8096 the same way as before.
+  box fronts 8097 the same way as before.
