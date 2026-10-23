@@ -17,13 +17,24 @@ side server — one process, one port, one home screen.
 Downloads are on the
 [releases page](https://github.com/aeon01100101/aeontv-livetv/releases) —
 the program zip plus the starter movies in three small packs.
+Windows and Linux builds are both there.
 
-**With the app (easiest):** unzip `AeonTV-One-App-v2.0.0.zip`, open
-the folder, run **AeonTV**. It starts everything in the background and
-opens your station. Closing the window doesn't stop it — the
-⏻ Stop button in the app is the off switch.
+**Windows — with the app (easiest):** unzip
+`AeonTV-One-App-Win-v2.0.0.zip`, open the folder, run **AeonTV.exe**.
+It starts everything in the background and opens your station.
+Closing the window doesn't stop it — the ⏻ Stop button in the app
+is the off switch. (Unsigned: SmartScreen may warn once — More info
+→ Run anyway.)
 
-**Without the app:** unzip `AeonTV-One-Folder-v2.0.0.zip`, then:
+**Windows — without the app:** unzip `AeonTV-One-Folder-Win-v2.0.0.zip`
+and double-click `bin\start-aeontv.bat` (Ctrl+C stops it;
+`bin\stop-aeontv.bat` stops it from another window).
+
+**Linux — with the app:** unzip `AeonTV-One-App-v2.0.0.zip`, open
+the folder, run **AeonTV**. Same deal: background start, the
+⏻ Stop button is the off switch.
+
+**Linux — without the app:** unzip `AeonTV-One-Folder-v2.0.0.zip`, then:
 
 ```bash
 bash bin/start-aeontv.sh    # starts AeonTV One (port 8097)
