@@ -14,12 +14,16 @@ side server — one process, one port, one home screen.
 
 ## Run it
 
-**With the app (easiest):** unzip `AeonTV-One-v2.0.0.zip`, open the
-folder, run **AeonTV**. It starts everything in the background and
+Downloads are on the
+[releases page](https://github.com/aeon01100101/aeontv-livetv/releases) —
+the program zip plus the starter movies in three small packs.
+
+**With the app (easiest):** unzip `AeonTV-One-App-v2.0.0.zip`, open
+the folder, run **AeonTV**. It starts everything in the background and
 opens your station. Closing the window doesn't stop it — the
 ⏻ Stop button in the app is the off switch.
 
-**Without the app:** unzip `AeonTV-One-folder-v2.0.0.zip`, then:
+**Without the app:** unzip `AeonTV-One-Folder-v2.0.0.zip`, then:
 
 ```bash
 bash bin/start-aeontv.sh    # starts AeonTV One (port 8097)
@@ -29,15 +33,18 @@ bash bin/stop-aeontv.sh     # stops it
 First start runs the setup wizard in your browser — make your admin
 account and you're done. The live channel wires itself up.
 
-## Included — officially tested
+## Starter movies — officially tested
 
 These public-domain classics from the Internet Archive were used to
 test the channel scan end-to-end (scan → guide → live stream →
-playback) and ship inside the program as your starter channel:
+playback). Each is its own download pack; unzip it and drop the
+`media` folder into the program folder so the movie lands in
+`media/livetv` (for the app: into `AeonTV-One/resources/payload`),
+before the first start:
 
-- **His Girl Friday (1940)**
-- **House on Haunted Hill (1959)**
-- **Reefer Madness (1938)**
+- **AeonTV-One-Starter-Movies-A-v2.0.0.zip** — His Girl Friday (1940)
+- **AeonTV-One-Starter-Movies-B-v2.0.0.zip** — House on Haunted Hill (1959)
+- **AeonTV-One-Starter-Movies-C-v2.0.0.zip** — Reefer Madness (1938)
 
 ## Add your own
 
